@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    margin: 20px;
+}
+
+.nomes {
+    text-align: left;
+    margin-left: 20%;
+}
+
+ul {
+    list-style: none;
+    counter-reset: item;
+}
+
+li::before {
+    content: counter(item) ". ";
+    counter-increment: item;
+    margin-right: 10px;
+}
