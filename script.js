@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     const nomeInput = document.getElementById("nome");
-    const nomesDiv = document.getElementById("nomes");
+    const nomesDiv = document.getElementById("nomes").getElementsByTagName("ul")[0];
 
     nomeInput.addEventListener("keyup", function (event) {
         if (event.key === "Enter" && nomeInput.value.trim() !== "") {
